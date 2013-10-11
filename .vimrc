@@ -1,9 +1,22 @@
 " what is this I don't even
+set nocompatible
+" magic vundle stuff
 filetype off
-call pathogen#runtime_append_all_bundles()
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Townk/vim-autoclose'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'git://git.wincent.com/command-t.git'
+
 filetype plugin indent on
 
-set nocompatible
 
 set modelines=0
 
@@ -94,7 +107,7 @@ inoremap jj <ESC>
 
 syntax on
 
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:indent_guides_start_level=2 
+let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=2
 
+autocmd FileType c,cpp,java,php,python,js autocmd BufWritePre <buffer> :%s/\s\+$//e
