@@ -1,0 +1,11 @@
+gg:audio 0
+gg:dcc 0
+gg:dcc_ip 
+gg:dcc_limit 30/30
+gg:dcc_port 1550
+gg:display_token 1
+gg:get_images 0
+gg:image_size 20
+gg:images_dir 
+gg:skip_default_format 0
+gg:split_messages 0

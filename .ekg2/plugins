@@ -1,0 +1,5 @@
+plugin irc 15
+plugin gg 15
+plugin jabber 15
+plugin logs 5
+plugin ncurses 0

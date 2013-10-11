@@ -1,0 +1,67 @@
+# @(#)cshrc 1.11 89/11/29 SMI
+umask 077
+set path=(/usr/local/sbin /usr/sbin /usr/X11R6/bin /sbin /bin /usr/bin /usr/ucb /etc /usr/etc /usr/openwin/bin /usr/local/bin ~/bin ~/.bin $HOME/bin /usr/local/scripts /usr/games)
+
+if ( $?prompt ) then
+	set history=1000
+endif
+
+if !( $?WINDOW ) then
+        setenv WINDOW NOSCR
+endif
+
+set filec
+alias time	'/usr/bin/time -hp'
+alias dnsver    'dig @$1 version.bind. chaos txt'
+alias vi	'vim'
+alias archie	'archie -s'
+alias tin	'tin -r'
+alias psa	'ps aux|more'
+alias dir	'ls -AlF | more  '
+alias ll 	 ls\ -l
+alias . 	 source
+alias zct 	'zcat \!* | tar xf -'
+alias la 	'ls -a'
+alias l 	 ls
+alias cp        'cp -i'
+alias mv        'mv -i'
+alias rm        'rm -f'
+alias pwd       'echo $cwd'
+alias del       'mv \!* $home/.wastebasket'
+alias whois     'whois -h RS.INTERNIC.NEt'
+alias bye        exit
+alias ..        'cd ..'
+alias hi         history
+alias cls       'clear; if ($TERM == sun ) clear_colormap'
+alias e		'cls ; logout'
+alias q		'e'
+alias ekg2	'ekg2 -m -F ncurses'
+#
+set fignore=( .o ~ % )
+set notify
+set savehist=1000
+set history=100
+set autolist
+set autoexpand
+set autocorrect
+set pushdsilent
+set correct=all
+set watch = (0 any any)
+set fignore=('~' '%' '#')
+set prompt="[%U%P%u] [%l|$WINDOW] [%h] %m:%n:%~%# "
+set prompt3="Poprawic na [%R] (Yes, No, Edit)? "
+set rmstar
+set noclobber
+#
+#setenv SDL_VIDEODRIVER vgl
+setenv LANG en_US.UTF-8
+setenv LC_CTYPE "en_US.UTF-8"
+setenv LC_COLLATE pl_PL.UTF-8
+setenv LC_TIME pl_PL.UTF-8
+setenv LC_NUMERIC pl_PL.UTF-8
+setenv LC_MONETARY pl_PL.UTF-8
+setenv LC_MESSAGES "en_US.UTF-8"
+setenv EDITOR "vim"
+setenv DICTIONARY "polish,english"
+#koniec.
+

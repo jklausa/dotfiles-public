@@ -1,0 +1,25 @@
+# prosty przyk³ad ircopodobnego wy¶wietlania wiadomo¶ci
+
+known_user %1
+#unknown_user %1
+message %C<%1%C>%n %3\n
+#message_conference_line_first %3 %C<%2%C>%n %1\n
+message_line         %1\n
+chat %C<%1%C>%n %3\n
+#chat_conference_line_first %3 %C<%2%C>%n %1\n
+#chat_line         %1\n
+sent %G<klausa%G>%n %3\n
+#sent_conference_line_first %3 %G<%1%G>%n %1\n
+#sent_line       %1\n
+
+
+message_line_first,nc %G<%n%2%G>%n %1\n
+message_conference_line_first,nc %G<%n%2%G>%n %1\n
+message_line,nc         %1\n
+chat_line_first,nc %C<%n%2%C>%n %1\n
+chat_conference_line_first,nc %C<%n%2%C>%n %1\n
+chat_line,nc         %1\n
+sent_line_first,nc %G<%n%2%G>%n %1\n
+sent_conference_line_first,nc %G<%n%2%G>%n %1\n
+sent_line,nc       %1\n
+

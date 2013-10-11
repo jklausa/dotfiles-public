@@ -1,0 +1,8 @@
+logs:log 1
+logs:log_ignored 0
+logs:log_max_open_files 7
+logs:log_raw 0
+logs:log_status 0
+logs:path ~/.ekg2/logs/%S/%M-%Y/%U
+logs:remind_number 0
+logs:timestamp %T %d-%m-%Y
