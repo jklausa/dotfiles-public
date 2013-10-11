@@ -1,6 +1,6 @@
 # @(#)cshrc 1.11 89/11/29 SMI
 umask 077
-set path=(/usr/local/sbin /usr/sbin /usr/X11R6/bin /sbin /bin /usr/bin /usr/ucb /etc /usr/etc /usr/openwin/bin /usr/local/bin ~/bin ~/.bin $HOME/bin /usr/local/scripts /usr/games)
+set path=(/usr/local/sbin /usr/sbin /usr/X11R6 /usr/local/opt/ruby/bin /bin /sbin /bin /usr/ucb /etc /usr/etc /usr/openwin/bin /usr/local/bin ~/bin ~/.bin $HOME/bin /usr/bin /usr/local/scripts /usr/games /Library/PostgreSQL/9.0/bin ~/stuff/Android/platform-tools)
 
 if ( $?prompt ) then
 	set history=1000
@@ -36,6 +36,8 @@ alias cls       'clear; if ($TERM == sun ) clear_colormap'
 alias e		'cls ; logout'
 alias q		'e'
 alias ekg2	'ekg2 -m -F ncurses'
+alias mplayer 	'/Applications/MPlayerX.app/Contents/Resources/binaries/x86_64/mplayer'
+alias mvim 	'open -a MacVim'
 #
 set fignore=( .o ~ % )
 set notify
@@ -48,7 +50,7 @@ set pushdsilent
 set correct=all
 set watch = (0 any any)
 set fignore=('~' '%' '#')
-set prompt="[%U%P%u] [%l|$WINDOW] [%h] %m:%n:%~%# "
+set prompt="[%U%P%u] %m:%n:%~%# "
 set prompt3="Poprawic na [%R] (Yes, No, Edit)? "
 set rmstar
 #
