@@ -27,9 +27,6 @@ set softtabstop=4
 set expandtab
 
 " again, wtf is this
-set backupdir=~/.vim/tmp/backup//  "backups
-set directory=~/.vim/tmp/swap//    "swap files
-set backup                         "enable backups
 
 " project drawer
 map <F2> :NERDTreeToggle<cr>
@@ -73,6 +70,7 @@ vnoremap <tab> %
 nmap <leader>R :RainbowParenthesesToggle<CR>
 
 set wrap
+set linebreak
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85

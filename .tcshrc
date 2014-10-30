@@ -1,5 +1,5 @@
 # @(#)cshrc 1.11 89/11/29 SMI
-umask 077
+
 set path=(/usr/local/sbin /usr/sbin /usr/X11R6/bin /sbin /bin /usr/bin /usr/ucb /etc /usr/etc /usr/openwin/bin /usr/local/bin ~/bin ~/.bin $HOME/bin /usr/local/scripts /usr/games)
 
 if ( $?prompt ) then
@@ -36,6 +36,8 @@ alias cls       'clear; if ($TERM == sun ) clear_colormap'
 alias e		'cls ; logout'
 alias q		'e'
 alias ekg2	'ekg2 -m -F ncurses'
+alias got 'git'
+
 #
 set fignore=( .o ~ % )
 set notify
