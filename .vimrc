@@ -7,7 +7,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'gmarik/vundle'
 Plugin 'Townk/vim-autoclose'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
