@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+if [[ -a '/Applications/MacVim.app' ]]; then
+    path+=('/Applications/MacVim.app/Contents/bin')
+fi
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/klausa/.oh-my-zsh
 
@@ -91,7 +92,6 @@ export LC_MONETARY=pl_PL.UTF-8
 alias got=git
 alias dir="ls -AlF | more"
 alias mosh="LC_CTYPE=en_US.UTF-8 LC_ALL=en_US.UTF-8 mosh"
-alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 
 #eval "$(rbenv init -)"
 
