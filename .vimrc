@@ -3,17 +3,19 @@ set nocompatible
 " magic vundle stuff
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'Townk/vim-autoclose'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'git://git.wincent.com/command-t.git'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'gmarik/vundle'
+Plugin 'Townk/vim-autoclose'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'git://git.wincent.com/command-t.git'
 
+call vundle#end()
 filetype plugin indent on
 
 set modelines=0
