@@ -1,0 +1,25 @@
+[user]
+	name = Jan Klausa
+	email = jan@klausa.pl
+[core]
+    excludesfile = /Users/klausa/.gitignore_global
+    difftool = Kaleidoscope
+[push]
+    default = current
+[pull]
+    rebase = false
+[merge]
+    tool = Kaleidoscope
+[diff]
+	tool = Kaleidoscope
+[mergetool]
+	prompt = false
+[difftool]
+    prompt = false
+[diff "localizablestrings"]
+	textconv = "iconv -f utf-16 -t utf-8"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
