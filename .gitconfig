@@ -25,3 +25,5 @@
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [init]
 	defaultBranch = main
+[alias]
+	dotfiles = !git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME
