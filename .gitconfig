@@ -29,3 +29,5 @@
 	dotfiles = !git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME
 [rerere]
 	enabled = true
+[help]
+	autocorrect = 15
