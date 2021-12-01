@@ -27,3 +27,5 @@
 	defaultBranch = main
 [alias]
 	dotfiles = !git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME
+[rerere]
+	enabled = true
