@@ -31,3 +31,5 @@
 	enabled = true
 [help]
 	autocorrect = 15
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
