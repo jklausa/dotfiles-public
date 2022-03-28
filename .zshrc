@@ -2,6 +2,9 @@
 if [[ -a '/Applications/MacVim.app' ]]; then
     path+=('/Applications/MacVim.app/Contents/bin')
 fi
+
+path+=('/Users/klausa/scripts')
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/klausa/.oh-my-zsh
 
