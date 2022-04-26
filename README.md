@@ -14,3 +14,16 @@ git dotfiles status
 ```
 
 etc.
+
+
+To import Moom config file:
+```
+defaults import com.manytricks.Moom ~/.moom-config.plist
+```
+
+You might need to update the `Vundle submodule` manually:
+```
+cd .vim/bundle/Vundle.vim
+git dotfiles submodule update --init --recursive
+```
+
