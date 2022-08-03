@@ -57,7 +57,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler gem pod rbenv mosh xcode swiftpm brew golang)
+plugins=(git bundler gem pod mosh xcode swiftpm brew golang asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,3 +100,5 @@ eval "$(rbenv init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

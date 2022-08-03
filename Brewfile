@@ -1,6 +1,6 @@
 brew 'mosh'
-brew 'rbenv'
 brew 'swiftformat'
+brew 'asdf'
 
 cask 'xcodes'
 cask 'iterm2'
@@ -9,6 +9,7 @@ cask 'fork'
 cask 'kaleidoscope'
 cask 'macvim'
 cask 'monitorcontrol'
+cask 'google-chrome'
 
 mas 'Tailscale', id: 1475387142
 mas 'Twitter', id: 1482454543

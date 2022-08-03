@@ -15,6 +15,9 @@ defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data
 # Don’t show recent applications in Dock
  defaults write com.apple.dock show-recents -bool false
 
+ # Don't rearrange spaces
+ defaults write com.apple.dock mru-spaces -bool false
+
 # Show path bar
  defaults write com.apple.finder ShowPathbar -bool true
 # Finder: show status bar
