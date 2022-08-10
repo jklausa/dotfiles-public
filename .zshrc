@@ -96,9 +96,6 @@ alias got=git
 alias dir="ls -AlF | more"
 alias mosh="LC_CTYPE=en_US.UTF-8 LC_ALL=en_US.UTF-8 mosh"
 
-eval "$(rbenv init -)"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
