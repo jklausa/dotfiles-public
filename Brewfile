@@ -20,4 +20,4 @@ mas 'Telegram', id: 747648890
 mas 'InYourFace', id: 1476964367
 mas '1Blocker', id: 1365531024
 mas 'Outbank', id: 1094255754
-mas 'Stecker', id 6447288587  
+mas 'Stecker', id: 6447288587  
