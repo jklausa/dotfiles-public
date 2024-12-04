@@ -264,6 +264,7 @@ killall Dock
 
 if ! command -v brew 2>&1 >/dev/null
 then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew bundle install
 fi
