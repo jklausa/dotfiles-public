@@ -51,6 +51,10 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.screensaver askForPassword -int 0
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Make trackpad go zoooooom
+defaults write -g com.apple.trackpad.scaling -int 3
+
+
 # Setup ^1 through ^9 to switch Desktops
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 118 "
   <dict>
