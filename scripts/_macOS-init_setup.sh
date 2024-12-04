@@ -54,6 +54,8 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Make trackpad go zoooooom
 defaults write -g com.apple.trackpad.scaling -int 3
 
+# Disable auto-emoji in iMessage
+defaults write com.apple.messages.text EmojiReplacement -int 1
 
 # Setup ^1 through ^9 to switch Desktops
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 118 "
